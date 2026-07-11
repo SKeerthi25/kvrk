@@ -4,12 +4,20 @@ import proj1 from '../../assets/image copy 2.png';
 import proj2 from '../../assets/image copy 3.png';
 import proj3 from '../../assets/image copy 7.png';
 import proj4 from '../../assets/image copy 8.png';
+import proj5 from '../../assets/image.png';
+import proj6 from '../../assets/image copy 4.png';
+import proj7 from '../../assets/image copy 9.png';
+import proj8 from '../../assets/image copy 11.png';
 
 const projects = [
   { title: "Modern Extension", category: "Construction", image: proj1 },
   { title: "Luxury Kitchen", category: "Interior Finishing", image: proj2 },
   { title: "Bespoke Brickwork", category: "Exterior", image: proj3 },
   { title: "Full Renovation", category: "Renovation", image: proj4 },
+  { title: "Commercial Office", category: "Commercial", image: proj5 },
+  { title: "Heritage Restoration", category: "Restoration", image: proj6 },
+  { title: "Outdoor Landscaping", category: "Exterior", image: proj7 },
+  { title: "Bespoke Joinery", category: "Interior Finishing", image: proj8 },
 ];
 
 const ProjectShowcase = () => {
