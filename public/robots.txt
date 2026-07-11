@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kvrkconstruction.co.uk/sitemap.xml
+Sitemap: https://kvrkconstructionltd.co.uk/sitemap.xml
