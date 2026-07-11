@@ -59,8 +59,9 @@ const GetQuote = () => {
     
     try {
       await emailjs.send('service_dyurp5d', 'template_djqa7f6', {
-        ...data,
-        message: `Quote Request from ${data.firstName} ${data.lastName}\nPhone: ${data.phone}\nProject: ${data.projectType} - ${data.service}\nLocation: ${data.city}\nBudget: ${data.budget}\nTimeline: ${data.timeline}\nDescription: ${data.description}`
+        from_name: `${data.firstName} ${data.lastName}`,
+        reply_to: data.email,
+        message: `Phone: ${data.phone}\nProject: ${data.projectType} - ${data.service}\nLocation: ${data.address}, ${data.city}, ${data.postcode}\nBudget: ${data.budget}\nTimeline: ${data.timeline}\nDescription: ${data.description}`
       }, {
         publicKey: 'rYQOd6rMeMaCLqe63'
       });

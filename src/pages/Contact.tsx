@@ -14,7 +14,14 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
     
-    emailjs.sendForm('service_dyurp5d', 'template_djqa7f6', form.current, {
+    const formData = new FormData(form.current);
+    const templateParams = {
+      from_name: `${formData.get('firstName')} ${formData.get('lastName')}`,
+      reply_to: formData.get('email'),
+      message: `Service Required: ${formData.get('service')}\n\nProject Details:\n${formData.get('description')}`
+    };
+
+    emailjs.send('service_dyurp5d', 'template_djqa7f6', templateParams, {
       publicKey: 'rYQOd6rMeMaCLqe63'
     })
       .then((result) => {
