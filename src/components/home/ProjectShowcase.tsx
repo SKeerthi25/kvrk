@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 
-import proj1 from '../../assets/image copy 2.png';
-import proj2 from '../../assets/image copy 3.png';
-import proj3 from '../../assets/image copy 7.png';
-import proj4 from '../../assets/image copy 8.png';
+import proj1 from '../../assets/image_copy_2.png';
+import proj2 from '../../assets/image_copy_3.png';
+import proj3 from '../../assets/image_copy_7.png';
+import proj4 from '../../assets/image_copy_8.png';
 import proj5 from '../../assets/image.png';
-import proj6 from '../../assets/image copy 4.png';
-import proj7 from '../../assets/image copy 9.png';
-import proj8 from '../../assets/image copy 11.png';
+import proj6 from '../../assets/image_copy_4.png';
+import proj7 from '../../assets/image_copy_9.png';
+import proj8 from '../../assets/image_copy_11.png';
 
 const projects = [
   { title: "Modern Extension", category: "Construction", image: proj1 },
