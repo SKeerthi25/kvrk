@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-500: #393E46;
+  --color-secondary-500: #D65A31;
+  --color-accent-500: #F0A500;
+  --color-background: #121212;
+  --color-dark: #EEEEEE;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-dark);
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
