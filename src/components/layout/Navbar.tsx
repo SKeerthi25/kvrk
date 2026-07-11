@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import { Moon, Sun, ChevronDown, Menu, X, Search, Phone } from 'lucide-react';
+import { useState } from 'react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
